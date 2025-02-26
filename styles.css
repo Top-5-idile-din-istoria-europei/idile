@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1e1e1e;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#fff;
+}
+h1 {
+    color: #8b0000;
+    align-items: center;
+    text-align: center;
+}
+h3{
+    color:#fff;
+    align-items: left;
+}
+p{
+    color: #f77062;
+}
+
+textarea {
+    width: 80%;
+    height: 50px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #8b0000;
+    border-radius: 5px;
+}
+button {
+    display: flex;
+    background-color: #8b0000;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border:none;
+    justify-self: center;
+}
+textarea{
+    text-align: center;
+    justify-self: center;
+}
+button:hover{
+    background-color: #4a0000;
+    transition:all 0.3s ease
+}
+.navbar{
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    font-size: 1rem;
+    position:sticky;
+    top: 0;
+    z-index: 999;
+
+}
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    z-index:1 ;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 34px;
+}
+#navbar__logo{
+    background-color: #8b0000;
+    background-image: linear-gradient(to top, #ff0844 25%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip:text ;
+    -moz-background-clip:text ;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 0;
+}
+.fa-gem{
+    margin-right: 0.5rem;
+}
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+.navbar__item{
+    height: 80px;
+}
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    padding: 0 1rem;
+    height: 100%;
+}
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+#poem{
+    margin: auto;
+}
+.navbar__links:hover{
+color:#f77062;
+transition:all 0.3s ease ;
+}
+@media screen and (max-width: 960px){
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+   height: 80px; 
+   z-index: 1;
+   width: 100%;
+max-width: 1300px;
+padding: 0;
+}
+.navbar__menu{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top:-1000px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    height: 50vh;
+    z-index: -1;
+    background: #131313;
+}
+
+.navbar__menu.active{
+    background: #131313;
+    top:100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 50vh;
+    font-size: 1.6rem;
+}
+#navbar__logo{
+    padding-left: 25px;
+
+}
+.navbar__toggle .bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease ;
+    background: #fff;
+}
+.navbar__item{
+width:100%;
+}
+.navbar__links{
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display:table;  
+}
+#mobile-menu{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%) ;
+}
+.navbar__toggle .bar{
+    display: block;
+    cursor: pointer;
+}
+#mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+}
+#mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+#mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
+.main{
+    background-color: #1e1e1e;
+    align-self: left;
+    text-align: left;
+    padding: 15px;
+    color:#fff;
+
+}
+.main__container{
+   display: grid;
+   grid-template-columns: 1.5fr 0.5fr; 
+   margin: 0 auto;
+   height: 90hv;
+   background-color: #1e1e1e;
+   z-index: 1;
+   width:100%;
+   padding: 0 50px;
+   color:#fff;
+
+}
+.main__img--container{
+    align-self: right;
+    text-align: right;
+}.descriere{
+    text-align: left;
+}
